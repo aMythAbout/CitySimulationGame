@@ -27,7 +27,7 @@ public class Move : MonoBehaviour
 
       //  rb.velocity = new Vector3(Mathf.Clamp(Input.GetAxis("Horizontal") * Time.deltaTime * 200, -25, 25),0,0);
         // rb.velocity = new Vector3(0,0,Mathf.Clamp(Input.GetAxis("Vertical") * Time.deltaTime * 200, -25, 25));
-        rb.velocity = transform.forward * Mathf.Clamp(Input.GetAxis("Vertical") * Time.deltaTime * 200, -25, 25);
+        rb.velocity = transform.forward * Mathf.Clamp(Input.GetAxis("Vertical") * Time.deltaTime * 800, -45, 45);
 
     }
 }
